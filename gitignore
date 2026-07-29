@@ -1,0 +1,18 @@
+# --- Generated data & artifacts (recreated by running the scripts) ---
+*.csv
+*.db
+*.pkl
+
+# ...but keep the final trained model so the repo runs out-of-the-box.
+# (Delete the next line if you'd rather people retrain it themselves.)
+!volguard_model.pkl
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# --- macOS ---
+.DS_Store
