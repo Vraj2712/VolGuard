@@ -2,3 +2,9 @@ function.zip
 trust.json
 out.json
 model.json
+
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
