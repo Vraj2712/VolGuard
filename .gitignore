@@ -2,6 +2,8 @@ function.zip
 trust.json
 out.json
 model.json
+volguard.db
+*.pkl
 
 # Terraform
 .terraform/
