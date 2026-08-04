@@ -6,3 +6,4 @@ scikit-learn==1.9.0
 scipy==1.18.0
 xgboost==3.2.0
 yfinance==1.5.2
+xgboost==3.4.0

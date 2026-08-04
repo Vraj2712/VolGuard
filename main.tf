@@ -13,6 +13,11 @@ variable "region" { default = "us-east-1" }
 variable "bucket_name" { default = "volguard-vraj-2026-tf" }
 variable "model_key" { default = "model.json" }
 variable "function_name" { default = "volguard-predict" }
+variable "api_key" {
+  description = "Shared secret required in the x-api-key header to call the public Function URL"
+  type        = string
+  sensitive   = true
+}
 
 resource "aws_s3_bucket" "data" {
   bucket        = var.bucket_name
@@ -83,6 +88,7 @@ resource "aws_lambda_function" "predict" {
     variables = {
       VOLGUARD_BUCKET    = aws_s3_bucket.data.id
       VOLGUARD_MODEL_KEY = var.model_key
+      VOLGUARD_API_KEY   = var.api_key
     }
   }
 }
