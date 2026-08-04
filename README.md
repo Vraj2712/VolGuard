@@ -1,5 +1,14 @@
 # VolGuard
 
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![Task](https://img.shields.io/badge/Task-Volatility%20Forecasting-purple)
+![Model](https://img.shields.io/badge/Model-Linear%20Regression-8A2BE2)
+![Validation](https://img.shields.io/badge/Validation-Walk--Forward-teal)
+![Cloud](https://img.shields.io/badge/AWS-S3%20%7C%20Lambda-orange)
+![IaC](https://img.shields.io/badge/IaC-Terraform-623CE4)
+![Dashboard](https://img.shields.io/badge/Dashboard-Tableau-e97627)
+![Metrics](https://img.shields.io/badge/Metrics-RMSE%20%7C%20MAE%20%7C%20R²-yellowgreen)
+
 VolGuard forecasts how **volatile** — not which direction, just how choppy — five stocks (`AAPL`, `AMZN`, `GOOGL`, `MSFT`, `NVDA`) will be over the next 5 trading days. It's an end-to-end pipeline: raw prices → SQL feature engineering → honestly-validated ML model → deployed AWS Lambda → a live results dashboard.
 
 [![VolGuard dashboard](Dashboard.png)](https://public.tableau.com/app/profile/vraj.patel6320/viz/VolGuard-StockVolatilityForecasting/Dashboard1)
