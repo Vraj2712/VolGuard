@@ -2,6 +2,8 @@
 
 VolGuard forecasts how **volatile** — not which direction, just how choppy — five stocks (`AAPL`, `AMZN`, `GOOGL`, `MSFT`, `NVDA`) will be over the next 5 trading days. It's an end-to-end pipeline: raw prices → SQL feature engineering → honestly-validated ML model → deployed AWS Lambda → a live results dashboard.
 
+[![VolGuard dashboard](dashboard.png)](https://public.tableau.com/app/profile/vraj.patel6320/viz/VolGuard-StockVolatilityForecasting/Dashboard1)
+
 **Live dashboard:** https://public.tableau.com/app/profile/vraj.patel6320/viz/VolGuard-StockVolatilityForecasting/Dashboard1
 
 ---
